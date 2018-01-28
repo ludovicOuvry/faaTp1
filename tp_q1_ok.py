@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 
-a=[np.random.uniform(-1,1),np.random.uniform(-1,1)]
-b=[np.random.uniform(-1,1),np.random.uniform(-1,1)]
+a=np.random.uniform(-1,1,2)
+b=np.random.uniform(-1,1,2)
 plt.plot(a,b, 'r-', lw=2)
 # le problème venait de la mauvaise compréhension du fonctionnement de plot : ici a contient les x et b les y, et non pas a[0] = x et a[1] = y
 ax = a[0]
